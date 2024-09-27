@@ -1,0 +1,891 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #3d4449;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  
+}
+
+
+/* ___________________________________<cabecera>_____________________________ */
+
+.header {   /*separo el header en 3 columnas y dos filas*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 80px 80px;
+  border-bottom: 4px solid #f56a6a;
+}
+
+.logo {     /* posiciona logo, redes y búsqueda*/
+ grid-column: 1 / 3;
+ grid-row: 1 / 3;
+}
+
+.redes {
+ grid-column: 3 / 4;
+ grid-row: 1 / 3
+}
+
+.busqueda {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.navegador { /*posiciona el menu de navegación */
+  grid-column: 1 / 3;
+}
+
+.desplegar { /*No muestra icono menú hamburguesa*/
+  display: none;
+}
+
+
+/* <menu navegación> */
+.ulmenu { 
+  font-family: "Roboto Slab", serif;
+  font-size: 1.1em;
+  max-width: 800px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 2px; 
+  padding-left: 20px;
+}
+
+.navegador li {
+  display: inline;
+}
+
+.navegador a {
+  color: #3d4449;
+  text-decoration: none;
+  padding: 0px 9px;
+}
+
+.navegador a:hover {
+  color: #f56a6a;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hamburguesa { /*le quito el padding generado al menu movil*/
+  padding: 0px;
+}
+
+.logo img {  /*Logotipo*/
+  max-width: 80px;
+  padding-left: 20px;
+  padding-top: 30px;
+  float: left;
+}
+
+
+
+h1 { /* título EstudiArquitectura */
+  max-width: 600px;
+  margin-top: 65px;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: bold;
+  font-size: 2.4em;
+  text-align: left;
+}
+
+.h1rojo {  /* Titulo en dos colores*/
+  color: #f56a6a;
+}
+
+/*____________________________<red sociales>_________*/
+
+.redes { /*posicion en el contenedor/columna */
+  min-width: 250px;
+  position: absolute;
+  right: 60px;
+}
+
+.redes li {
+  margin-top: 35px;
+  margin-left: 55%;
+}
+
+.redes li, 
+.redes a {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+#facebook {
+  left: 0px;
+  width: 30px;
+  background: url(../images/sprite_icons.png) 0px 0px;
+  background-size: 135px;  
+}
+
+#twitter {
+  left: 33px;
+  width: 30px;
+  background: url(../images/sprite_icons.png) -35px 0px;
+  background-size: 135px;
+}
+
+#pinterest {
+  left: 66px;
+  width: 30px;
+  background: url(../images/sprite_icons.png) -70px 0px;
+  background-size: 135px;
+}
+
+#instagram {
+  left: 99px;
+  width: 30px;
+  background: url(../images/sprite_icons.png) -105px 0px;
+  background-size: 135px;
+}
+
+#facebook a:hover {
+  background: url(../images/sprite_icons.png) 0px -35px;
+  background-size: 135px;
+}
+#twitter a:hover {
+  background: url(../images/sprite_icons.png) -35px -35px;
+  background-size: 135px;
+}
+#pinterest a:hover {
+  background: url(../images/sprite_icons.png) -70px -35px;
+  background-size: 135px;
+}
+#instagram a:hover {
+  background: url(../images/sprite_icons.png) -105px -35px;
+  background-size: 135px;
+}
+/*_____________________________________</red sociales>_________*/
+
+/*_____________________________________<buscar>_________*/
+
+
+.busqueda input {
+  position: absolute;
+  right: 60px;
+  top: 170px;
+  width: 130px;
+  padding: 2px 0px 2px 10px;/**/
+  border: 1px lightgray solid;
+  border-radius: 5px;
+}
+
+.busqueda img {
+  position: absolute;
+  right: 30px;
+  top: 170px;
+  width: 25px;
+}
+/*_____________________________________</buscar>_________*/
+
+/*_____________________________________<imagen>_________*/
+.contenedorimagen { 
+
+  min-height: 265px;
+  width: 100%;
+  background-image: url(../images/arch01.jpg);
+  background-repeat: no-repeat;
+  background-position: center; /*Centrada en el container*/
+  background-size: cover; /*mantiene las dimensiones*/
+}
+
+.contenedorh2 {
+  width: 65%;
+}
+
+header h2 {
+  padding: 70px 0px 20px 30px;
+  margin: 0px;
+  font-size: 30px;
+  text-shadow: 2px 2px 0px black;
+  color: white;
+
+}
+
+/* </menu navegación> */
+
+
+
+/* ____________________________________</cabecera>____________________________________ */
+
+
+/* ____________________________________<Index>____________________________________ */
+
+.contenedor {
+
+  max-width: 1200px; /*máxima anchura*/
+  width: 90%; /*máximo anchura al reducir*/
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.6em;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+
+
+blockquote {
+  display: grid;
+  grid-template-columns: 22px 1fr; /*Pongo en una columna las comillas y en la otra el contenido*/
+  margin: 0px;
+  line-height: 1.2em;
+  font-weight: 500;
+  font-size: 1.2em;
+  padding: 25px 25px 0px 10px;
+  background-color: lightgrey;
+  border-top: 3px red dotted;
+  border-bottom: 3px red dotted;
+  font-style: italic;
+}
+
+blockquote p {
+	margin-bottom: 5px;
+} 
+
+blockquote cite {
+  font-family: "Open Sans", sans-serif;
+  grid-column: 2/3;
+  font-size: 15px;
+  font-style: initial;
+  font-weight: 700;
+  margin-left: 10px;
+  padding-bottom: 20px;
+}
+
+blockquote::before {
+  padding-top: 5px;
+  font-weight: 400;
+  font-size: 3em;
+  color: white;
+  content:  "\00AB";
+}
+/* _______________________<destacados> */
+
+figure {
+  margin-left: 0px;
+}
+
+main img {
+  float: left;
+  padding-right: 35px;
+
+}
+
+h4 {
+  margin: 0px 0px;
+  color: #f56a6a;
+}
+.proyecto {
+  margin-bottom: 25px;
+}
+
+
+.destacados a { /*link botones*/
+  font-size: 0.7em;
+  font-weight: bold;
+  border: 2px solid #f56a6a;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #f56a6a;
+  padding: 8px 25px;
+
+}
+
+.destacados a:hover {
+  background-color: #f56a6a;
+  color: white;
+}
+
+.destacados { /*Vista de columnas con padding a la izquierda*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 85px;
+}
+
+.destacados p {
+  font-weight: 600;
+  font-size: 13px;
+  width: 90%;
+
+}
+
+
+/* ____________________________________</index>____________________________________ */
+
+/* ____________________________________<proyecto>____________________________________ */
+
+
+
+figcaption {
+  font-size: smaller;
+  padding-left: 7px;
+}
+
+.imgaranda {
+  padding: 0px; /*corrige el desplazamiento de las img index*/
+  width: 100%;
+  border: 1px solid #f56a6a;
+  float: none;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.tabla {
+  display: block;
+  margin: 0px auto;
+  position: relative;
+  right: 15px;
+}
+
+table th {
+  font-weight: 500;
+}
+
+table th,
+table td,
+caption { /*Cuadricula roja*/
+  text-align: left;
+  padding: 7px 0px;
+  padding-left: 7px;
+  padding-right: 35px;
+  border: 2px solid #f56a6a;
+}
+
+caption { /*Eliminamos el borde que se repite*/
+  border-bottom: none;
+}
+
+.proyectogrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.proyectogrid>figure {
+  margin-top: 0px;
+  padding-left: 60px;
+}
+
+.proyectogrid~p { /* interactuar con todo los hermanos*/
+  width: 75%;
+  margin: 0px auto;
+  text-align: justify;
+  padding-bottom: 30px;
+  font-weight: 600;
+}
+
+/* ____________________________________</main proyecto>____________________________________ */
+
+
+/* ____________________________________<singulares>____________________________________ */
+
+.psingular {
+  padding: 0px 100px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.singularesgrid { /*Creamos el grid*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 265px 265px;
+  grid-gap: 5px;
+  margin-bottom: 35px;
+}
+
+.singularesgrid h4 {
+  width: 70%;
+  max-width: 300px;
+  background-color: white;
+  position: relative;
+  left: 25%;
+  top: 200px;
+}
+
+.imgsingular1,
+.imgsingular2,
+.imgsingular3,
+.imgsingular4,
+.imgsingular5,
+.imgsingular6 {
+  max-width: 400px;
+
+  height: 250px;
+  filter: grayscale(100%);
+}
+
+.imgsingular1 {
+  background-image: url(../images/barceloneta.jpg);
+}
+
+.imgsingular2 {
+  background-image: url(../images/carrercarme.jpg);
+}
+
+.imgsingular3 {
+  background-image: url(../images/lafabrica.jpg);
+}
+
+.imgsingular4 {
+  background-image: url(../images/paloalto.jpg);
+}
+
+.imgsingular5 {
+  background-image: url(../images/pavellorepublica.jpg);
+}
+
+.imgsingular6 {
+  background-image: url(../images/sert.jpg);
+}
+
+
+.barcelonetah4,
+.carmeh4,
+.fabricah4,
+.paloh4,
+.republicah4,
+.dispensarioh4 { 
+  position: relative;
+  width: 400px;
+  height: 20px;
+  top: 20px;
+  z-index: 1; /*Cambiaos el orden de posicionado*/    
+}
+
+
+.imgsingular1:hover,
+.imgsingular2:hover,
+.imgsingular3:hover,
+.imgsingular4:hover,
+.imgsingular5:hover,
+.imgsingular6:hover {
+  filter: none;
+}
+
+.singularesgrid h4:hover {
+  transition: padding-bottom 0.5s ease-out; /*Tiempo transición*/
+  padding-bottom: 8px;
+  background-color: #f56a6a;
+  color: white;
+}
+
+
+.barcelonetah4:hover,
+.carmeh4:hover,
+.fabricah4:hover,
+.paloh4:hover,
+.republicah4:hover,
+.dispensarioh4:hover { /*cambio de color transición*/
+
+  
+}
+
+
+.singularesgrid h4 { /*crea en los h4 un padding*/
+  padding-top: 2px;
+  padding-left: 2px; 
+}
+
+/* ____________________________________</main singulares>____________________________________ */
+
+/* ____________________________________<Contactar>____________________________________ */
+form {
+  width: 70%;
+  margin: 0px auto;
+  margin-bottom: 30px;
+  
+}
+
+form li {
+  list-style: none;
+  padding: 15px;
+  text-align: left;
+}
+
+form abbr {
+  text-decoration: none;
+}
+
+form ul {
+  padding: 0px;
+}
+
+.simbolo {
+  color: #f56a6a;
+  font-weight: 700;
+}
+
+.asgrande {
+  font-size: 23px;
+}
+
+fieldset {
+  border: 2px solid #f56a6a;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+legend {
+  font-size: 1.4em;
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+.comocontactar {
+  font-size: 1.2em;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+label {
+  margin-left: 15px;
+}
+
+input, textarea, select {
+  max-width: 400px;
+  width: 50%;
+  padding: 8px;
+  margin-right: 15px;
+  float: right;
+  font-size: 1em;
+}
+
+select {
+  max-width: 300px;
+}
+
+
+input:focus, textarea:focus , select:focus {
+  border: 1px solid #f56a6a;
+  transition: outline 0.3s ease-out;
+  outline: 5px solid #f56a6a;
+}
+
+input[type=radio],
+input[type=checkbox] { /*Quitamos el focus externo sobre los radios y check -Actuamos sobre el type de input*/
+  outline: none;
+}
+
+input[type=checkbox] {
+  float: none; /*le quitamos el float right para que se coloque a la derecha*/
+  max-width: 25px;
+}
+
+.botonform { 
+  max-width: 300px;
+  width: 70%;
+  text-align: center;
+  border: 2px solid #f56a6a;
+  background-color: white;
+  padding: 10px 0px;
+  margin: 5px 0px;
+  border-radius: 5px; 
+}
+
+.botonform:hover {
+  color: white;
+  background-color: #f56a6a;
+}
+
+.containerboton {
+  width: 100%;
+  text-align: center;
+}
+
+/* ____________________________________</Contactar>____________________________________ */
+
+/*---------------------------------<footer>*/
+
+
+footer {
+  margin: 0px;
+  padding-bottom: 70px;
+  width: 100%;
+  background-color: #4c566a;
+  color: white;
+  text-align: center; 
+  
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  color: #f56a6a;
+}
+
+.footer {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: left;
+}
+
+.fcolumna1 {
+  grid-column: 2/2;
+}
+
+.fcolumna2 {
+  grid-column: 4/5;
+
+}
+
+
+
+/* ________________________________________<móvil>________________________________ */
+
+@media screen and (max-width: 1350px){ /*----<Edificios singulares>---*/
+
+  .singularesgrid{  
+    display: flex; /*cambio el grid por flex y lo centro*/
+    flex-wrap: wrap; /*para que se coloque en fila de dos o uno si no hay espacio*/
+    justify-content: center;
+  }
+
+}
+
+
+@media screen and (max-width: 700px) {  
+
+  body {
+    font-size: 13px;
+  }
+
+  .contenedorh2 {
+    width: 70%;  /*subtitulo index img*/
+  }
+
+  .destacados {   /*Convertir a una Columna destacados index*/
+    grid-template-columns: 1fr;
+    padding-left: 45px;
+  }
+
+  /*_______Cabecera_____________________________*/
+  .header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px;
+  }
+
+
+  .ulmenu li { /*Ajustes para el li*/
+    max-width: 47%;
+    z-index: 1; /*Posicionar encima del buscador*/
+    display: block;
+    padding: 10px;
+    padding-left: 0px;
+    font-size: 16px;
+    background-color: white;
+    border: #f56a6a solid 2px;
+    border-bottom: none;
+  }
+
+/*
+  .ulmenu li:hover {
+      background-color: #f56a6a;
+      }*/
+
+      .navegador li:last-child { /*Le añado un borde más ancho a la ultima celda*/
+        border-bottom: #f56a6a solid 5px;
+      }
+
+
+      .navegador ul li ul { /*Desactivo la ul*/
+        margin-top: 0px;
+        position: relative;
+        display: none;
+      }
+
+      .navegador ul li:hover ul { /*hacemos hover sobre li para que muestre la ul descendiente*/
+        display: block;
+      }
+
+      .navegador ul li ul a{
+        padding: 10px;
+      }
+
+      .hamburguesa a:hover {
+        color: #f56a6a;
+      }
+
+
+      .desplegar { /* Activamos la hamburguesa ya que no se veia v.escritorio */
+        display: block;
+        color: #f56a6a;
+        font-size: 2.5em;
+        margin-top: 10px;
+        margin-left: 20px;
+        padding: 0px 8px;
+      }
+
+
+
+      .logo { /*Hago el contenedor Flex y lo centro*/
+        display: flex;
+        justify-content: center;
+
+      }
+
+      .logo>img {
+        padding: 0px;
+        padding-bottom: 25px; 
+      }
+
+      .logo>h1 { 
+        margin-top: 42px;
+      }
+
+      
+      .busqueda input {
+        left: 20px;
+        top: 180px;
+        z-index: 0;
+        
+      }
+
+      .busqueda img {
+        left: 152px;
+        top: 177px;
+        z-index: 0;
+      }
+
+      .navegador {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+      }
+
+      .logo {
+        width: 100%; 
+        margin: 0px auto;
+        padding-bottom: 20px;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+      }
+
+      .redes {
+        right: 35px;
+        top: 125px;
+        
+      }
+
+      main img { /*Imagenes index*/
+        float: none;
+      }
+
+
+      /* <móvil proyecto> ________________________*/
+
+      .proyectogrid {
+        grid-template-columns: 1fr;
+
+      }
+
+      caption { /*Eliminamos el borde que se repite*/
+        border-top: 4px solid #f56a6a;
+      }
+
+      table {
+        font-size: 14px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+
+      table th,
+      table td {
+        padding-right: 20px;
+        padding-top: 5px
+      }
+
+      .imgaranda { /*Coloco la imagen en una columna*/
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 95%;
+        display: block; /*Lo convierto en bloque para poder alinearlo*/
+        margin: 0px auto;
+      } 
+
+      .tabla { /*Coloco la tabla en una columna*/
+        grid-column:  1 / 2;
+        grid-row: 2 / 3;
+        right: 0px;
+        width: 55%;
+      }
+
+      .h3min { /*Se posicionan de diferente manera q el de index*/
+        text-align: left;
+        padding: 20px 60px;
+      }
+
+      .proyectogrid>figure {
+        margin: 0px auto;
+        margin-top: 10px;
+        padding-left: 0px;
+        padding-bottom: 20px;
+      }
+
+      .proyectogrid~p {
+        width: 85%;
+      }
+
+      /*_____________<singulares>______*/
+
+      .psingular {
+        text-align: justify;
+        padding: 0px 70px;
+        padding-bottom: 10px;
+        font-size: 16px;
+      }
+
+      .singularesgrid h4 { /*Para que se ajuste al borde*/
+        padding-right: 18px;
+      }
+      /*__________________<Contacto>_____________*/
+
+      form {
+        width: 90%;
+      }
+
+      textarea {
+        height: 80px;
+        margin: 0px;
+        margin-right: 10px;
+        margin-top: 8px;
+        width: 90%;
+        display: flex;
+        
+      }
+
+
+      /*_________________<Footer>_________________*/
+
+      footer ul{
+        padding-left: 0px;
+      }
+
+      footer p { 
+        text-align: left;
+        padding: 0px 110px;
+      }
+
+
+    }
+
+
