@@ -33,4 +33,4 @@ Este proyecto sigue estrictamente las recomendaciones de estándares web, asegur
 
 
 ---
-*Proyecto desarrollado siguiendo las mejores prácticas de HTML y CSS.*
+*<center>Proyecto desarrollado siguiendo las mejores prácticas de HTML y CSS.</center>*
