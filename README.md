@@ -1,6 +1,4 @@
-# **<center>HTML & CSS con ESTÁNDARES WEB</center>**
-
-# *Página Web - Proyecto HTML y CSS*
+# *Página Web - Proyecto HTML y CSS - estándares web*
 
 Este proyecto consiste en el desarrollo de una página web utilizando HTML y CSS, siguiendo los estándares web establecidos por la W3C. El objetivo principal es garantizar una estructura semántica, accesible y eficiente, junto con un diseño optimizado que mantenga buenas prácticas en cuanto a rendimiento y usabilidad.
 
